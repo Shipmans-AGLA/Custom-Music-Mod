@@ -1,0 +1,6 @@
+Customize the music in your game!
+This mod contains a single file that changes the music to whatever music files you place in the music folder of this mod.
+Does not come with any music, you have to put the music you want in yourself.
+Works with calamity to not replace music while in a calamity biome, but also still works without calamity.
+I put comments in the code to hopefully make reading and using the mod as clear as possible :)
+Your music files need to be named correctly, so you should probably look at and refer to the code of this mod.

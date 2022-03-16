@@ -1,0 +1,6 @@
+displayName = Custom Music Mod
+author = Shipmans AGLA
+version = 0.1
+hideCode = false
+includeSource = true
+side = client
