@@ -4,3 +4,22 @@ Does not come with any music, you have to put the music you want in yourself.
 Works with calamity to not replace music while in a calamity biome, but also still works without calamity.
 I put comments in the code to hopefully make reading and using the mod as clear as possible :)
 Your music files need to be named correctly, so you should probably look at and refer to the code of this mod.
+
+How To Use:
+1. enable developer mod on tmodloader 
+2. if you don't have some of the required programs for this, follow this guide for them:
+	https://github.com/tModLoader/tModLoader/wiki/Basic-Prerequisites
+3. extract the mod and move the extracted mod to your mod sources folder
+	(documents > my games > terraria > mod loader > mod sources)
+	OR download the files from the mod's github
+4. Create a folder in the mod called "Sounds", and create another folder in that folder called "Music" if these folders aren't there already
+5. Add your music files to the "Music" folder (Last time I checked, Terraria likes .ogg and .wav file formats for sounds)
+	If Terraria rejects your sound file's format, import them into audacity and then export them as the correct format
+6. Make sure your music files are named correctly by checking the file directory the code looks for when changing the music
+	These are the lines of code that say "music = GetSoundSlot(SoundType.Music, "Sounds/Music/<your file name here>")"
+	You will need to open CustomMusicMod.cs for this
+7. Comment out (add // before) any "music = GetSoundSlot(SoundType.Music, "Sounds/Music/<your file name here>")" line of code for biomes/events you did not add a music file for
+8. Build + reload the mod, and test to see if it works!
+
+You should be able to read the code inside the if statements throughout the code to determine which biome/boss/event they change the music for
+for example, if (Main.LocalPlayer.ZoneCorrupt) means the following indented lines of code activate when the player is in the corruption
